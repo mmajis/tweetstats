@@ -7,3 +7,7 @@ twitter4j:
     tweetstream-locations: 23.10303092,61.4043936483,30.8117183113,70.104258328,20.9171565437,59.7570348227,28.1080516243,61.4043936483,20.9171565437,59.8613157303,24.1593249702,63.8751876425,20.7339509392,68.3073079852,26.1984904671,69.3632370745
 kafka: 
     bootstrap-broker-string: localhost:29092
+    ssl-endpoint-identification-algorithm: https
+    sasl-mechanism: PLAIN
+    sasl-jaas-config: ${KAFKA_SASL_JAAS_CONFIG}
+    security-protocol: SASL_SSL
